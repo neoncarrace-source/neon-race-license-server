@@ -8,6 +8,6 @@
   "cliente_streamer": {
     "password": "abcd",
     "device_id": null,
-    "active": false
+    "active": true
   }
 }
