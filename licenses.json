@@ -5,9 +5,8 @@
     "active": true
   },
 
-  "cliente_streamer": {
-    "password": "abcd",
-    "device_id": null,
-    "active": true
-  }
+"cliente_test": {
+  "password": "1111",
+  "device_id": null,
+  "active": true
 }
