@@ -13,10 +13,10 @@
     "password": "victor123",
     "device_id": null,
     "active": true
+  },
+  "nuevo_usuario": {
+    "password": "1234",
+    "device_id": null,
+    "active": true
   }
-},
-"nuevo_cliente": {
-  "password": "1234",
-  "device_id": null,
-  "active": true
 }
