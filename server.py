@@ -27,23 +27,51 @@ def write_json_file(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def load_seed_licenses():
+    if os.path.exists(SEED_FILE):
+        return read_json_file(SEED_FILE)
+    return {}
+
+
 def ensure_license_file():
     os.makedirs(VOLUME_PATH, exist_ok=True)
 
-    seed_data = {}
-    if os.path.exists(SEED_FILE):
-        seed_data = read_json_file(SEED_FILE)
+    seed_data = load_seed_licenses()
 
-    # Si no existe el del volumen, lo crea
     if not os.path.exists(LICENSE_FILE):
         write_json_file(LICENSE_FILE, seed_data)
         return
 
-    # Si existe pero está roto, lo regenera desde GitHub
     try:
-        read_json_file(LICENSE_FILE)
+        volume_data = read_json_file(LICENSE_FILE)
     except Exception:
         write_json_file(LICENSE_FILE, seed_data)
+        return
+
+    merged_data = sync_licenses(seed_data, volume_data)
+    write_json_file(LICENSE_FILE, merged_data)
+
+
+def sync_licenses(seed_data, volume_data):
+    merged = {}
+
+    for username, seed_user in seed_data.items():
+        if username in volume_data:
+            volume_user = volume_data[username]
+
+            merged[username] = {
+                "password": seed_user.get("password", volume_user.get("password")),
+                "device_id": volume_user.get("device_id"),
+                "active": seed_user.get("active", volume_user.get("active", True)),
+            }
+        else:
+            merged[username] = {
+                "password": seed_user.get("password", ""),
+                "device_id": seed_user.get("device_id", None),
+                "active": seed_user.get("active", True),
+            }
+
+    return merged
 
 
 def load_licenses():
