@@ -8,5 +8,10 @@
     "password": "1111",
     "device_id": null,
     "active": true
+  },
+  "victor": {
+    "password": "victor123",
+    "device_id": null,
+    "active": true
   }
 }
