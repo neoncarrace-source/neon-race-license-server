@@ -4,9 +4,9 @@
     "device_id": "PC_DE_VICTOR",
     "active": true
   },
-
-"cliente_test": {
-  "password": "1111",
-  "device_id": null,
-  "active": true
+  "cliente_test": {
+    "password": "1111",
+    "device_id": null,
+    "active": true
+  }
 }
