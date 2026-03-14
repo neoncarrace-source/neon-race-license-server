@@ -23,5 +23,10 @@
     "password": "martin2026",
     "device_id": null,
     "active": false
+  },
+  "datolol": {
+    "password": "DL2026",
+    "device_id": null,
+    "active": true
   }
 }
