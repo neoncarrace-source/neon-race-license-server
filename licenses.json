@@ -32,10 +32,15 @@
   "zyrex": {
     "password": "zyrex123",
     "device_id": null,
-    "active": false
+    "active": true
   },
   "diego_creator": {
     "password": "DC2026",
+    "device_id": null,
+    "active": true
+  },
+  "zetta": {
+    "password": "Zetta2026",
     "device_id": null,
     "active": true
   }
