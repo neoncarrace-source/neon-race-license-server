@@ -28,5 +28,10 @@
     "password": "DL2026",
     "device_id": null,
     "active": true
+  },
+  "zyrex": {
+    "password": "zyrex123",
+    "device_id": null,
+    "active": true
   }
 }
