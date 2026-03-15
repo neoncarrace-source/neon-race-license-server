@@ -43,5 +43,10 @@
     "password": "Zetta2026",
     "device_id": null,
     "active": true
+  },
+  "darkot": {
+    "password": "Darkot2026",
+    "device_id": null,
+    "active": true
   }
 }
