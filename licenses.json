@@ -32,6 +32,11 @@
   "zyrex": {
     "password": "zyrex123",
     "device_id": null,
+    "active": false
+  },
+  "diego_creator": {
+    "password": "DC2026",
+    "device_id": null,
     "active": true
   }
 }
