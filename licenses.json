@@ -53,5 +53,10 @@
     "password": "Roibol2026",
     "device_id": null,
     "active": true
+  },
+  "delpo": {
+    "password": "Delpo2026",
+    "device_id": null,
+    "active": true
   }
 }
