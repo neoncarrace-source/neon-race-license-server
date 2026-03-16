@@ -48,5 +48,10 @@
     "password": "Darkot2026",
     "device_id": null,
     "active": true
+  },
+  "roibol": {
+    "password": "Roibol2026",
+    "device_id": null,
+    "active": true
   }
 }
