@@ -58,5 +58,10 @@
     "password": "Delpo2026",
     "device_id": null,
     "active": true
+  },
+  "diegocrack": {
+    "password": "DiegoCrack2026",
+    "device_id": null,
+    "active": true
   }
 }
